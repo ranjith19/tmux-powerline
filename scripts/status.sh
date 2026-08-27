@@ -45,7 +45,7 @@ print_tabs() {
         color_for_window "$window_id"
         color="$WINDOW_COLOR"
         if [[ "$active" == "1" ]]; then
-            printf '#[range=window|%s,fg=colour%s,bg=colour%s,bold] %s  %s #[fg=colour%s,bg=colour%s]#[range=none,nobold]' \
+            printf '#[range=window|%s,fg=colour%s,bg=colour%s,bold] ● %s  %s #[fg=colour%s,bg=colour%s]#[range=none,nobold]' \
                 "$window_id" "$BACKGROUND" "$color" "$index" "$name" "$color" "$BACKGROUND"
         else
             printf '#[range=window|%s,fg=colour255,bg=colour%s] %s  %s #[fg=colour%s,bg=colour%s]#[range=none]' \

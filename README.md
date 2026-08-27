@@ -21,5 +21,5 @@ separator glyphs.
 - Windows receive a random color from a curated palette when first displayed.
 - Their color is stored as a tmux window option, so it remains stable until the
   tmux server stops or the option is removed.
-- The active window uses darker, bold text for contrast.
+- The active window uses darker, bold text and a filled-circle indicator.
 - The right side displays the elapsed lifetime of the active tmux session.
