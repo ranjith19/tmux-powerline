@@ -48,8 +48,8 @@ print_tabs() {
             printf '#[range=window|%s,fg=colour%s,bg=colour%s,bold] ● %s  %s #[fg=colour%s,bg=colour%s]#[norange,nobold]' \
                 "$index" "$BACKGROUND" "$color" "$index" "$name" "$color" "$BACKGROUND"
         else
-            printf '#[range=window|%s,fg=colour255,bg=colour%s] %s  %s #[fg=colour%s,bg=colour%s]#[norange]' \
-                "$index" "$color" "$index" "$name" "$color" "$BACKGROUND"
+            printf '#[range=window|%s,fg=colour%s,bg=colour%s] %s  %s #[fg=colour%s,bg=colour%s]#[norange]' \
+                "$index" "$color" "$BACKGROUND" "$index" "$name" "$color" "$BACKGROUND"
         fi
     done < <(tmux list-windows -F $'#{window_id}\t#{window_index}\t#{window_name}\t#{window_active}')
 }
