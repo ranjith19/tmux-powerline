@@ -71,6 +71,14 @@ print_uptime() {
     fi
 }
 
+print_border() {
+    local i
+
+    for ((i = 0; i < 500; i++)); do
+        printf '─'
+    done
+}
+
 case "${1:-}" in
 tabs)
     print_tabs
@@ -78,8 +86,11 @@ tabs)
 uptime)
     print_uptime
     ;;
+border)
+    print_border
+    ;;
 *)
-    printf 'usage: %s {tabs|uptime}\n' "$0" >&2
+    printf 'usage: %s {tabs|uptime|border}\n' "$0" >&2
     exit 64
     ;;
 esac
