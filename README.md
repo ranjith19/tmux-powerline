@@ -1,7 +1,8 @@
 # tmux-powerline
 
 A minimal, colorful tmux status bar. It shows clickable window tabs with a
-stable random color per window and the current tmux session uptime.
+stable random color per window, the current tmux session uptime, and a thin
+light-grey separator above the status row.
 
 ## Install with TPM
 
